@@ -1,6 +1,6 @@
-#MicroContent for Social MicroLearning
+# MicroContent for Social MicroLearning
 
-##Concept and Idea
+## Concept and Idea
 
 MicroContent is a type of digital learning material that is
 * small (size, time to consume)
@@ -14,6 +14,6 @@ A content type provider has to provide two things:
 * a content viewer that is able to display data appropriatly
 * an editor that is able to edit the data or create a new instance
 
-##Examples
+## Examples
 
 You can find examples in the github organization [MicroContent](https://github.com/MicroContent)
