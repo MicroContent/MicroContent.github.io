@@ -1,0 +1,12 @@
+[
+  {
+    "name": "KFox Multiple Choice Multi Select",
+    "editor": "https://raw.githubusercontent.com/MicroContent/KFoxMcmsContentEditor/c371e44556d972b4fa848a05ed9d95bec6a1ae89/index.html",
+    "viewer": "https://raw.githubusercontent.com/MicroContent/KFoxMcmsContentViewer/bfffa8ab8344e3dbb4775de6aaaefa408e0f27aa/index.html"
+  },
+  {
+    "name": "Binary Numbers",
+    "editor": "https://raw.githubusercontent.com/MicroContent/BinaryNumberContentEditor/0b1a53b76f4eb1f2a4c0d8ea2489bae2fd9194f1/index.html",
+    "viewer": "https://raw.githubusercontent.com/MicroContent/BinaryNumberContentViewer/2e8055272880ce5ba30175240aa18721addf140c/index.html"
+  }
+]
