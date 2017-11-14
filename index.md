@@ -51,3 +51,8 @@ The getBoundingClientRect function returns the bounding rectangle of the embedde
 ## Examples
 
 You can find examples in the github organization [MicroContent](https://github.com/MicroContent)
+
+## Get Started
+
+To get started you only need a text editor.
+To test what you develop I suggest using a simple static content serving utility like [http-server](https://www.npmjs.com/package/http-server) and the [MicroContentTestHost](https://github.com/bgoeschi/MicroContentTestHost).
