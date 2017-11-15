@@ -27,6 +27,11 @@ The getData function returns an object containing data for the editor (in case a
 
 The setDataGetter function takes a parameterless function as argument. The function should return a data object representing the current state of user input. The host environment will call this function to store the data for this instance.
 
+MicroContent is often shared through social media and other communication channels using link preview. The following properties of your data will be picked up for link previews by the host system as a convention:
+* `title`
+* `description`
+* `imageUrl`
+
 
 ## Content Viewer
 
