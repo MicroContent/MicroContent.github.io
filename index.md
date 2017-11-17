@@ -20,8 +20,8 @@ Those two elements have to be permanently hosted as static html content. CORS ha
 
 A content editor should provide means to enter the data for a specific instance of your learning content type. The [BinaryNumberContentEditor](https://github.com/MicroContent/BinaryNumberContentEditor) for example provides a text field to enter a number between 0 and 255.
 An editor has two methods that allow communication with it's hosting environment:
-* getData()
-* setDataGetter(func)
+* `getData()`
+* `setDataGetter(func)`
 
 The getData function returns an object containing data for the editor (in case a user edits existing content) or undefined if there is no data yet (in case a user creates new content).
 
@@ -36,12 +36,13 @@ MicroContent is often shared through social media and other communication channe
 ## Content Viewer
 
 A content viewer shall display data and allow users to interact with it. The host environment provides a submit solution button to users and content viewers should be designed accordingly. The host environment provides the following methods:
-* getData()
-* propagateLayoutChanges()
-* sendXapiStatement(statement)
-* registerOnSubmitListener(listener)
-* setXapiObjectGetter(getter)
-* getBoundingClientRect()
+* `getData()`
+* `propagateLayoutChanges()`
+* `sendXapiStatement(statement)`
+* `registerOnSubmitListener(listener)`
+* `setXapiObjectGetter(getter)`
+* `getBoundingClientRect()`
+* `injectIframeWithSrc(containerClass, src)`
 
 The getData function returns a data object as stored with the editor.
 
@@ -52,6 +53,8 @@ The sendXapiStatment function is for logging learning relevant user (inter)actio
 The registerOnSubmitListener takes a parameterless function that will be called when the user clickes on the submit solution button in the host enviroment. It should present the solution, feedback and insight to the user.
 
 The getBoundingClientRect function returns the bounding rectangle of the embedded content and is needed to calculate relative mouse positions on certain elements of the content. (e.g. canvas onClick handler).
+
+The injectIframWithSrc function allows embedding videos from youtube or vimeo. Since the html is sanitized it is not possible to use iframes with src inside. The function takes two parameters `containerClass` which is used to pick the element where the iframe is injected (class names are mangled during sanitizing) and `src` which should be a href to the youtube video (use youtube-nocookie.com) or vimeo video. The method only allows whitelisted sources.
 
 ## Examples
 
