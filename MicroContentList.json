@@ -8,5 +8,10 @@
     "name": "Binary Numbers",
     "editor": "https://raw.githubusercontent.com/MicroContent/BinaryNumberContentEditor/a7ac5a72f0bd70226e369562298cea1a728135be/index.html",
     "viewer": "https://raw.githubusercontent.com/MicroContent/BinaryNumberContentViewer/2e8055272880ce5ba30175240aa18721addf140c/index.html"
+  },
+  {
+    "name": "Simple Sorting",
+    "editor": "https://raw.githubusercontent.com/MicroContent/SimpleSortingContentEditor/master/index.html",
+    "viewer": "https://raw.githubusercontent.com/MicroContent/SimpleSortingContentViewer/master/index.html"
   }
 ]
