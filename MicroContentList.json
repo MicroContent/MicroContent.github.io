@@ -13,5 +13,10 @@
     "name": "Simple Sorting",
     "editor": "https://raw.githubusercontent.com/MicroContent/SimpleSortingContentEditor/master/index.html",
     "viewer": "https://raw.githubusercontent.com/MicroContent/SimpleSortingContentViewer/master/index.html"
+  },
+  {
+    "name": "Fill In",
+    "editor": "",
+    "viewer": "" 
   }
 ]
