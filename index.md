@@ -63,4 +63,6 @@ You can find examples in the github organization [MicroContent](https://github.c
 ## Get Started
 
 To get started you only need a text editor.
-To test what you develop I suggest using a simple static content serving utility like [http-server](https://www.npmjs.com/package/http-server) and the [MicroContentTestHost](https://github.com/bgoeschi/MicroContentTestHost).
+To make your first steps as easy as possible we provide a MicroContent development toolset. It provides a static http server for local development, that already includes a MicroContentTestHost. You can find it [here](https://github.com/MicroContent/McToolset). Just download the [latest release](https://github.com/MicroContent/McToolset/releases) and run it as described and you're good to go!
+
+Alternatively you could use any other static content serving utility like [http-server](https://www.npmjs.com/package/http-server) and the [MicroContentTestHost](https://github.com/bgoeschi/MicroContentTestHost). If you're interrested you can also have a look at the code of the MicroContentTestHost and read the documentation of [google-caja](https://developers.google.com/caja/) to better understand what is going on under the hood.
