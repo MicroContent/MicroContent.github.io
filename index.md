@@ -44,17 +44,24 @@ A content viewer shall display data and allow users to interact with it. The hos
 * `getBoundingClientRect()`
 * `injectIframeWithSrc(containerClass, src)`
 
-The getData function returns a data object as stored with the editor.
+The getData function returns a data object as stored with the editor. The data object essentially defines an instance of the MicroContent type. E.g. a multiple choice card might have a title (string), a question (string) and an answer array. You should call the `getData` function when/before you initialize your view.
 
 The propagateLayoutChanges function informs the host environment that the dimensions of the content has changed.
+This might be necessary when you change your view in a way that influences its bounds. E.g. if you display a hint after a user clicks on a button and your content needs more space. You might also need this when you display the solution (see `registerOnSubmitListener`).
 
-The sendXapiStatment function is for logging learning relevant user (inter)actions. It takes an [xAPI statement](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md) as a parameter. The host environment will add actor, object.objectId and context.platform.
+The sendXapiStatment function is for logging learning relevant user (inter)actions. It takes an xAPI statement as a parameter.
+The xAPI or Experience API is a proposed standard to log, track and analyze learning activity data. Its heart is the a RESTful Endpoint to send and receive so called xAPI-Statements. You can find the full spec [here](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md). You can play around with the [xapi-lab](http://adlnet.github.io/xapi-lab/), an online statement generator to test what statements can look like. The essence of a statement are actor, verb and object (Who did what with/to what?). A MicroContent unit does not handle authentication, object identification and can be embedded in various contexts. Therefore the host environment will add actor, object.objectId and context.platform to the statement after you pass it to `sendXapiStatement` and before it is actually sent to an xAPI Endpoint. The host environment also takes care about where to send it to and how to authenticate the statement.
 
 The registerOnSubmitListener takes a parameterless function that will be called when the user clickes on the submit solution button in the host enviroment. It should present the solution, feedback and insight to the user.
+MicroContent follows the pattern of beeing submittable. The host that embedds the MicroContent will also provide a submit button and call the registered function. Typically you want to display the solution (which may need more space, see `propagateLayoutChanges`) and send an xAPI statement with a verb like "answered" or "attempted".
 
-The getBoundingClientRect function returns the bounding rectangle of the embedded content and is needed to calculate relative mouse positions on certain elements of the content. (e.g. canvas onClick handler).
+The getBoundingClientRect function returns the bounding rectangle of the embedded content and is needed to calculate relative mouse positions on certain elements of the content (e.g. canvas onClick handler).
+If you don't use canvas, you probably wont need it and can ignore it.
+As google-caja does not allow you to get information about the DOM outside of your box, this is the only way to calculate coordinates of mouse events on a canvas. If you want to see an example for that take a look at the [BinaryNumberContentViewer](https://github.com/MicroContent/BinaryNumberContentViewer).
 
-The injectIframWithSrc function allows embedding videos from youtube or vimeo. Since the html is sanitized it is not possible to use iframes with src inside. The function takes two parameters `containerClass` which is used to pick the element where the iframe is injected (class names are mangled during sanitizing) and `src` which should be a href to the youtube video (use youtube-nocookie.com) or vimeo video. The method only allows whitelisted sources.
+The injectIframWithSrc function allows embedding videos from youtube or vimeo.
+If you don't need that, you can ignore it.
+Since the html is sanitized it is not possible to use iframes with src inside. The function takes two parameters `containerClass` which is used to pick the element where the iframe is injected (class names are mangled during sanitizing) and `src` which should be a href to the youtube video (use youtube-nocookie.com) or vimeo video. The method only allows whitelisted sources.
 
 ## Examples
 
