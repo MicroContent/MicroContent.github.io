@@ -18,5 +18,10 @@
     "name": "Fill In",
     "editor": "https://raw.githubusercontent.com/MicroContent/FillInContentEditor/master/index.html",
     "viewer": "https://raw.githubusercontent.com/MicroContent/FillInContentViewer/master/index.html" 
+  },
+  {
+    "name": "Simple Translate",
+    "editor": "https://raw.githubusercontent.com/MicroContent/FillInContentEditor/master/index.html",
+    "viewer": "https://raw.githubusercontent.com/MicroContent/SimpleTranslateContentViewer/master/index.html" 
   }
 ]
