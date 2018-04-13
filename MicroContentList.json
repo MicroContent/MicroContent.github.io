@@ -23,5 +23,10 @@
     "name": "Simple Translate",
     "editor": "https://raw.githubusercontent.com/MicroContent/SimpleTranslateContentEditor/master/index.html",
     "viewer": "https://raw.githubusercontent.com/MicroContent/SimpleTranslateContentViewer/master/index.html" 
+  },
+  {
+    "name": "Matching",
+    "editor": "https://raw.githubusercontent.com/MicroContent/MatchingContentEditor/master/index.html",
+    "viewer": "https://raw.githubusercontent.com/MicroContent/MatchingContentViewer/master/index.html" 
   }
 ]
