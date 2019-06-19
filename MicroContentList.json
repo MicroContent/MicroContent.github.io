@@ -28,5 +28,10 @@
     "name": "Matching",
     "editor": "https://raw.githubusercontent.com/MicroContent/MatchingContentEditor/master/index.html",
     "viewer": "https://raw.githubusercontent.com/MicroContent/MatchingContentViewer/master/index.html" 
+  },
+  {
+    "name": "K-Anonymity",
+    "editor": "https://raw.githubusercontent.com/MicroContent/K-AnonymityContent/master/editor.html",
+    "viewer": "https://raw.githubusercontent.com/MicroContent/K-AnonymityContent/master/viewer.html" 
   }
 ]
