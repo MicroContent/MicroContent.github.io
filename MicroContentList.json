@@ -33,5 +33,10 @@
     "name": "K-Anonymity",
     "editor": "https://raw.githubusercontent.com/MicroContent/K-AnonymityContent/master/editor.html",
     "viewer": "https://raw.githubusercontent.com/MicroContent/K-AnonymityContent/master/viewer.html" 
+  },
+  {
+    "name": "Org-Chart",
+    "editor": "https://raw.githubusercontent.com/MicroContent/OrgChartContentEditor/cf1049533c8f9e14f67750795e2cd946eb6d01fa/index.html",
+    "viewer": "https://raw.githubusercontent.com/MicroContent/OrgChartContentViewer/b4129f5c11ab3ea579dac0aaf3450d535e1856f2/index.html" 
   }
 ]
