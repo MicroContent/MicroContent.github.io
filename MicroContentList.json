@@ -38,5 +38,10 @@
     "name": "Org-Chart",
     "editor": "https://raw.githubusercontent.com/MicroContent/OrgChartContentEditor/cf1049533c8f9e14f67750795e2cd946eb6d01fa/index.html",
     "viewer": "https://raw.githubusercontent.com/MicroContent/OrgChartContentViewer/eb4a07414f92fdc7d3d1bee29c87b5132f18e617/index.html" 
+  },
+  {
+    "name": "Frequency Filter",
+    "editor": "https://raw.githubusercontent.com/MicroContent/FrequencyFilterContent/master/editor.html",
+    "viewer": "https://raw.githubusercontent.com/MicroContent/FrequencyFilterContent/master/viewer.html" 
   }
 ]
