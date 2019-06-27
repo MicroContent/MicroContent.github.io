@@ -43,5 +43,10 @@
     "name": "Frequency Filter",
     "editor": "https://raw.githubusercontent.com/MicroContent/FrequencyFilterContent/master/editor.html",
     "viewer": "https://raw.githubusercontent.com/MicroContent/FrequencyFilterContent/master/viewer.html" 
+  },
+  {
+    "name": "Pool Selection",
+    "editor": "https://raw.githubusercontent.com/MicroContent/PoolSelectionContentEditor/master/index.html",
+    "viewer": "https://raw.githubusercontent.com/MicroContent/PoolSelectionContentViewer/master/index.html" 
   }
 ]
