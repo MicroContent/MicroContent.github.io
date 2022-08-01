@@ -51,7 +51,7 @@
   },
   {
     "name": "Audio Choice",
-    "editor": "https://raw.githubusercontent.com/MicroContent/AudioContentViewer/main/index.html",
-    "viewer": "https://raw.githubusercontent.com/MicroContent/AudioContentViewer/0.1.0/index.html" 
+    "editor": "https://raw.githubusercontent.com/MicroContent/AudioContentEditor/0.1.0/index.html",
+    "viewer": "https://raw.githubusercontent.com/MicroContent/AudioContentViewer/main/index.html" 
   }
 ]
