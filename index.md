@@ -79,6 +79,8 @@ A content viewer shall display data and allow users to interact with it. The hos
     * `sendXapiStatement`
     * `getXapiStatments`
 
+_Note:_ We would recommend that you add `body {padding-bottom: 3em}` when designing your viewer to avoid cut off issues
+
 
 ### setContent (important)
 The getData function returns a data object as stored with the editor. The data object essentially defines an instance of the MicroContent type. E.g. a multiple choice card might have a title (string), a question (string) and an answer array. You should handle the processing of the `setContent` message before/when you initialize your view.
