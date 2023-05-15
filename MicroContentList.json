@@ -54,5 +54,10 @@
     "editor": "https://raw.githubusercontent.com/MicroContent/AudioContentEditor/main/index.html",
     "viewer": "https://raw.githubusercontent.com/MicroContent/AudioContentViewer/main/index.html",
     "cssUrl": "https://raw.githubusercontent.com/MicroContent/AudioContentViewer/v0.2.1/styles.css"
-  }
+  },
+  {
+    "name": "Thingiverse Content",
+    "editor": "https://raw.githubusercontent.com/MicroContent/ThingiverseUploadEditor/main/index.html",
+    "viewer": "https://raw.githubusercontent.com/MicroContent/ThingiverseUploadViewer/main/index.html" 
+  },
 ]
